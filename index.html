@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Bullsy - Stock Market Learning Game</title>
+<meta name="description" content="Bullsy is a stock-market learning game with virtual money and real Indian market data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..900&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<link rel="icon" id="fav" href="data:,">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="hud"></header>
+<section id="nifty" aria-label="Sector benchmark index"><div class="nfin"><div class="nfi"><span class="lab">Sector benchmark</span><span class="nm"><span id="nfn">NIFTY 50</span><span class="dtag">DAILY</span></span><b id="nfv" class="num"></b><span id="nfch" class="num"></span><span id="nfm" class="num"></span><div class="seg" id="nfr" role="group" aria-label="Index time range"></div><p id="nfe" class="err" hidden></p></div><div class="nfw"><canvas id="nfc" role="img"></canvas></div></div></section>
+<section id="mband" hidden aria-label="Market watch"></section>
+<div id="wrap"><main id="app"></main>
+<footer>Company names and logos are trademarks of their owners, used for identification only. Bullsy is an educational game and is not affiliated with them. Prices to 5 Oct 2026 are real; in-game news and price moves are simulated. Not investment advice.</footer></div>
+<nav id="tabs" hidden aria-label="Game sections"></nav>
+<button id="fab" data-act="news" hidden aria-label="Replay this round's news">📰 News</button>
+<button id="quit" data-act="quit" hidden>✕ Quit</button>
+<div id="toasts" aria-live="polite"></div>
+<div id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="mhead"><div id="mcard"></div></div>
+<div id="cinfo" hidden role="dialog" aria-modal="false" aria-labelledby="cititle"></div>
+<script src="js/data.js"></script>
+<script>document.getElementById("fav").href = BULL_MARK;</script>
+<script src="js/app.js"></script>
+<script src="js/company-info.js"></script>
+
+</body>
+</html>
